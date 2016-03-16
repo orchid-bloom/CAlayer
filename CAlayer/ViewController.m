@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "TXCABasicAnimationController.h"
+#import "TXImageCropController.h"
+#import "TXMoveCircleLayerController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSArray *datSource;
 
 @end
 
@@ -16,12 +20,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, self.view.bounds.size.width,  self.view.bounds.size.height)];
+    [self.view addSubview:tableView];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    
+    
+    self.datSource = @[[[TXMoveCircleLayerController alloc] initWithTitle:@"移动圆形图层"],
+                       [[TXImageCropController alloc] initWithTitle:@"图片裁剪图层"],
+                       [[TXCABasicAnimationController alloc] initWithTitle:@"CABasicAnimation动画学习"],
+                       ];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"UITableViewCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    UIViewController *controller = self.datSource[indexPath.row];
+    cell.textLabel.text = controller.title;
+    
+    return cell;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.datSource.count;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *controller = self.datSource[indexPath.row];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end

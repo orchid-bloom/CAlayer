@@ -15,6 +15,11 @@
 		B6F4FCD01C992F4700C88F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F4FCCE1C992F4700C88F0E /* LaunchScreen.storyboard */; };
 		B6F4FCDB1C992F4800C88F0E /* CAlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCDA1C992F4800C88F0E /* CAlayerTests.m */; };
 		B6F4FCE61C992F4800C88F0E /* CAlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCE51C992F4800C88F0E /* CAlayerUITests.m */; };
+		B6F4FCF51C992FB800C88F0E /* TXMoveCircleLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCF41C992FB800C88F0E /* TXMoveCircleLayerController.m */; };
+		B6F4FCF81C992FCF00C88F0E /* TXImageCropController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCF71C992FCF00C88F0E /* TXImageCropController.m */; };
+		B6F4FCFB1C992FE600C88F0E /* TXCABasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCFA1C992FE600C88F0E /* TXCABasicAnimationController.m */; };
+		B6F4FCFE1C99307200C88F0E /* TXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4FCFD1C99307200C88F0E /* TXBaseViewController.m */; };
+		B6F4FD001C99323700C88F0E /* IMG_0346.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6F4FCFF1C99323700C88F0E /* IMG_0346.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		B6F4FCE11C992F4800C88F0E /* CAlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F4FCE51C992F4800C88F0E /* CAlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAlayerUITests.m; sourceTree = "<group>"; };
 		B6F4FCE71C992F4800C88F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F4FCF31C992FB800C88F0E /* TXMoveCircleLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMoveCircleLayerController.h; sourceTree = "<group>"; };
+		B6F4FCF41C992FB800C88F0E /* TXMoveCircleLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMoveCircleLayerController.m; sourceTree = "<group>"; };
+		B6F4FCF61C992FCF00C88F0E /* TXImageCropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageCropController.h; sourceTree = "<group>"; };
+		B6F4FCF71C992FCF00C88F0E /* TXImageCropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageCropController.m; sourceTree = "<group>"; };
+		B6F4FCF91C992FE600C88F0E /* TXCABasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXCABasicAnimationController.h; sourceTree = "<group>"; };
+		B6F4FCFA1C992FE600C88F0E /* TXCABasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXCABasicAnimationController.m; sourceTree = "<group>"; };
+		B6F4FCFC1C99307200C88F0E /* TXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBaseViewController.h; sourceTree = "<group>"; };
+		B6F4FCFD1C99307200C88F0E /* TXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBaseViewController.m; sourceTree = "<group>"; };
+		B6F4FCFF1C99323700C88F0E /* IMG_0346.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0346.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,19 @@
 		B6F4FCBF1C992F4700C88F0E /* CAlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B6F4FCFF1C99323700C88F0E /* IMG_0346.PNG */,
 				B6F4FCC31C992F4700C88F0E /* AppDelegate.h */,
 				B6F4FCC41C992F4700C88F0E /* AppDelegate.m */,
 				B6F4FCC61C992F4700C88F0E /* ViewController.h */,
 				B6F4FCC71C992F4700C88F0E /* ViewController.m */,
+				B6F4FCFC1C99307200C88F0E /* TXBaseViewController.h */,
+				B6F4FCFD1C99307200C88F0E /* TXBaseViewController.m */,
+				B6F4FCF31C992FB800C88F0E /* TXMoveCircleLayerController.h */,
+				B6F4FCF41C992FB800C88F0E /* TXMoveCircleLayerController.m */,
+				B6F4FCF61C992FCF00C88F0E /* TXImageCropController.h */,
+				B6F4FCF71C992FCF00C88F0E /* TXImageCropController.m */,
+				B6F4FCF91C992FE600C88F0E /* TXCABasicAnimationController.h */,
+				B6F4FCFA1C992FE600C88F0E /* TXCABasicAnimationController.m */,
 				B6F4FCC91C992F4700C88F0E /* Main.storyboard */,
 				B6F4FCCC1C992F4700C88F0E /* Assets.xcassets */,
 				B6F4FCCE1C992F4700C88F0E /* LaunchScreen.storyboard */,
@@ -246,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F4FD001C99323700C88F0E /* IMG_0346.PNG in Resources */,
 				B6F4FCD01C992F4700C88F0E /* LaunchScreen.storyboard in Resources */,
 				B6F4FCCD1C992F4700C88F0E /* Assets.xcassets in Resources */,
 				B6F4FCCB1C992F4700C88F0E /* Main.storyboard in Resources */,
@@ -273,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F4FCFE1C99307200C88F0E /* TXBaseViewController.m in Sources */,
 				B6F4FCC81C992F4700C88F0E /* ViewController.m in Sources */,
 				B6F4FCC51C992F4700C88F0E /* AppDelegate.m in Sources */,
+				B6F4FCF51C992FB800C88F0E /* TXMoveCircleLayerController.m in Sources */,
+				B6F4FCF81C992FCF00C88F0E /* TXImageCropController.m in Sources */,
 				B6F4FCC21C992F4700C88F0E /* main.m in Sources */,
+				B6F4FCFB1C992FE600C88F0E /* TXCABasicAnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
